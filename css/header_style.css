@@ -1,0 +1,722 @@
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+} 
+/* ============== Start NavbarTop =============== */
+.NavbarTop {
+    background: #12758b; 
+    padding: 10px 0;
+}
+
+.NavbarTop ul {
+    margin: 0;
+}
+
+.navLarge ul a { 
+    text-align: center;
+}
+
+.NavbarTop ul a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.NavbarTop ul a i {
+    color: #fff !important;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.NavbarTop ul a i.fa-facebook-f {
+    background: #3b5999;
+}
+
+.NavbarTop ul a i.fa-twitter {
+    background: #55acee;
+}
+
+.NavbarTop ul a i.fa-instagram {
+    background: #e4405f;
+}
+
+.NavbarTop ul a i.fa-linkedin-in {
+    background: #0077B5;
+}
+
+.NavbarTop .contactInfo {
+    padding: 0 20px;
+    position: absolute;
+}
+
+.NavbarTop .contactInfo .phone a,
+.NavbarTop .contactInfo .email a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.NavbarTop .contactInfo .phone a i,
+.NavbarTop .contactInfo .email a i {
+    padding: 0 4px;
+
+}
+/* ============== End NavbarTop =============== */
+/* ============== Start NavbarMobile =============== */
+.NavbarMobile {
+    display: none;
+}
+/* ============== End NavbarMobile =============== */
+/* ============== Start navLarge =============== */
+.navLarge {
+    background: #fff;
+    padding: 0 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .navbar-brand {
+    height: 70px;
+    width: 225px;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .navbar-brand img {
+    height: 100%;
+    width: 150px;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul {
+    padding: 0 !important;
+}
+
+.navLarge ul li a {
+    color: #929292; 
+    font-size: 16px;
+    padding: 40px 10px !important;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul li a:hover {
+    color: #07b2e6;
+}
+
+.navLarge ul li a.active {
+    color: #07b2e6;
+}
+
+.navLarge ul li a.active::before {
+    top: 0%;
+    height: 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul li a:hover::before {
+    top: 0%;
+    height: 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul li a::before {
+    content: '';
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    top: 5%;
+    opacity: 0;
+    left: 0;
+    background: #07b2e6;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .langLink a::before{
+    display: none;
+}
+
+.navLarge .langLink .langIconLink,
+.navLarge .langLink .langIconLinkAfterLogin {
+    padding: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .langLink .langIconLink a,
+.navLarge .langLink .langIconLinkAfterLogin a {
+    padding: 0 !important;
+    text-decoration: none;
+}
+
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown a::after {
+    display: none !important;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu {
+    margin-top: 10px;
+    border-radius: 0;
+    padding: 5px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+    margin: 0;
+    padding: 5px 0 !important;
+    color: #07b2e6;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item i {
+    margin: 0 2px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background: #12758b;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+    text-align: right;
+    padding: 5px 10px !important;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item p {
+    margin: 0;
+    color: #000;
+}
+
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover p {
+    color: #fff;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item .timeDate {
+    color: #9e9d9d;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover .timeDate {
+    color: #c7c4c4;
+}
+
+
+.navLarge .langLink .langIconLink i {
+    color: #A4C2F7;
+    background: #E3E7F2;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #A4C2F7;
+    border-radius: 50%;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin a {
+    margin: 0 7px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin i.fa-bell {
+    color: #000;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin i.fa-user {
+    color: #A4C2F7;
+    background: #E3E7F2;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #A4C2F7;
+    border-radius: 50%;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin a .fa-bell {
+    position: relative
+}
+
+.navLarge .langLink .langIconLinkAfterLogin a span {
+    position: absolute;
+    top: -12px;
+    left: -7px;
+    background: rgb(187, 0, 0);
+    color: #fff;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin img {
+    height: 30px;
+    width: 30px;
+}
+
+.navLarge .langLink .langAbbrLink {
+    color: #111;
+    font-size: 20px;
+    padding: 0 20px 0px !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navLargeTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    transition: 0.3s ease-in-out;
+}
+
+.navLargeTop .navbar-brand {
+    height: 55px;
+    margin: 0;
+}
+
+.navLargeTop .navbar-brand img {
+    width: 120px;
+}
+
+.navLargeTop ul li a {
+    padding: 20px !important;
+}
+
+.navLargeTop ul li a:hover::before {
+    height: 3px;
+}
+
+.navLargeTop .langLink .langIconLink {
+    padding: 15px 20px !important;
+}
+
+.navLargeTop .langLink .langAbbrLink {
+    padding: 0 10px !important;
+}
+/* ============== End navLarge =============== */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start navLarge =============== */
+    .navLarge .navbar-brand {
+        height: 60px;
+        width: 150px;
+        margin: 0;
+    }
+
+    .navLarge .navbar-brand img {
+        height: 100%;
+        width: 120px;
+    }
+
+    .navLarge ul {
+        padding: 0 !important;
+    }
+
+    .navLarge ul li a {
+        padding: 40px 7px !important;
+    }
+
+    .navLarge .langLink .langIconLinkAfterLogin a {
+        margin: 0 7px;
+    }
+
+    .navLarge .langLink .langIconLinkAfterLogin i.fa-bell {
+        height: 25px;
+        width: 25px;
+    }
+
+    .navLarge .langLink .langIconLinkAfterLogin i.fa-user {
+        height: 25px;
+        width: 25px;
+        font-size: 13px;
+    }
+
+    .navLarge .langLink .langIconLinkAfterLogin a span {
+        top: -15px;
+        left: -10px;
+        height: 22px;
+        width: 22px;
+        font-size: 13px;
+    }
+
+    .navLarge .langLink .langAbbrLink {
+        padding: 0 15px 0px !important;
+    }
+
+    .navLargeTop .navbar-brand {
+        height: 50px;
+    }
+    
+    .navLargeTop .navbar-brand img {
+        width: 100px;
+    }
+    
+    .navLargeTop ul li a {
+        padding: 15px 7px !important;
+    }
+    
+    .navLargeTop ul li a:hover::before {
+        height: 3px;
+    }
+
+    .navLargeTop .langLink .langIconLinkAfterLogin a span {
+        top: -10px;
+    }
+    
+    .navLargeTop .langLink .langAbbrLink {
+        padding: 0 10px !important;
+    }
+    /* ============== End navLarge =============== */
+    /* ################### End Global ################### */
+}
+
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start NavbarTop =============== */
+    .NavbarTop {
+        display: none !important;
+    }
+    /* ============== End NavbarTop =============== */
+    /* ============== Start NavbarMobile =============== */
+    .NavbarMobile {
+        display: flex !important;
+        flex-flow: row;
+        padding: 6px 0;
+        background: #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobileTop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .navbar-brand {
+        height: 36px;
+        padding: 0 20px;
+    }
+    
+    .NavbarMobile .navbar-brand img {
+        height: 100%;
+        width: 80px;
+    }
+
+    .NavbarMobile .navMenuMobile {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    .NavbarMobile .navMenuMobile .menuAllSections {
+        height: 80%;
+    }
+
+    .NavbarMobile .navMenuMobile .closebtn {
+        content: '';
+        position: absolute;
+        background: #cc2121;
+        color: #fff;
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NavbarMobile .navMenuMobile a {
+        padding: 8px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #111;
+        transition: 0.3s;
+        display: none;
+    }
+
+    .NavbarMobile .navMenuMobile a.active {
+        color: #cc2121;
+    }
+
+    .NavbarMobile .navMenuMobile a:hover {
+        color: #cc2121;
+    }
+
+    .NavbarMobile .navMenuMobile ul.navbar-nav {
+        padding-top: 50px;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo {
+        display: flex;
+        flex-flow: column;
+        padding: 0 20px;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactMatrial a {
+        padding: 0 0 0px;
+        font-size: 17px;
+        font-weight: 600;
+        color: #555;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactMatrial i {
+        padding: 0 10px;
+        color: #555;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul {
+        margin: 0;
+        padding: 0;
+    } 
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul a {
+        padding: 0;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul a i {
+        color: #fff !important;
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2px;
+        border-radius: 5px;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul i.fa-facebook-f {
+        background: #3b5999;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial i.fa-twitter {
+        background: #55acee;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul i.fa-instagram {
+        background: #e4405f;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul i.fa-linkedin-in {
+        background: #0077B5;
+    }
+
+    .NavbarMobile .navMobileOptions .navbar-toggler {
+        outline: none;
+    }
+   
+    .NavbarMobile .langFlagLink img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .NavbarMobile .langLink .langIconLink,
+    .NavbarMobile .langLink .langIconLinkAfterLogin {
+        padding: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .langLink .langIconLink a,
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        padding: 0 !important;
+        text-decoration: none;
+    }
+
+    .NavbarMobile .langLink .langIconLink i {
+        color: #A4C2F7;
+        background: #E3E7F2;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #A4C2F7;
+        border-radius: 50%;
+        margin: 0 7px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        margin: 0 7px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin i.fa-bell {
+        color: #000;
+        height: 30px;
+        width: 30px;
+        font-size: 22px;
+        border-radius: 50%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin i.fa-user {
+        color: #A4C2F7;
+        background: #E3E7F2;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #A4C2F7;
+        border-radius: 50%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a .fa-bell {
+        position: relative
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a span {
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        background: rgb(187, 0, 0);
+        color: #fff;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .NavbarMobile .langLink .langAbbrLink {
+        color: #111;
+        font-size: 20px;
+        padding: 0 10px 0px !important;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown a::after {
+        display: none !important;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu {
+        /* right: -150% !important; */
+        margin-top: 10px;
+        border-radius: 0;
+        padding: 5px;
+        position: absolute;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+        margin: 0;
+        padding: 5px 0 !important;
+        color: #07b2e6;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item i {
+        margin: 0 2px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover {
+        color: #fff;
+        background: #12758b;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+        text-align: right;
+        padding: 5px 10px !important;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item p {
+        margin: 0;
+        color: #000;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover p {
+        color: #fff;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item .timeDate {
+        color: #9e9d9d;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover .timeDate {
+        color: #c7c4c4;
+    }
+    /* ============== End NavbarMobile =============== */
+    /* ============== Start navLarge =============== */
+    .navLarge {
+        display: none !important;
+    }
+    /* ============== End navLarge =============== */
+}
+
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+
+    .NavbarMobile .navbar-brand {
+        margin: 0;
+    }
+
+    .NavbarMobile .langLink .langIconLink,
+    .NavbarMobile .langLink .langIconLinkAfterLogin {
+        padding: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .langLink .langIconLink a,
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        padding: 0 !important;
+        text-decoration: none;
+    }
+
+    .NavbarMobile .langLink .langIconLink i {
+        border-radius: 50%;
+        margin: 0 7px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        margin: 0 3px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin i.fa-bell {
+        height: 30px;
+        width: 30px;
+        font-size: 22px;
+        border-radius: 50%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a .fa-bell {
+        position: relative
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a span {
+        top: -10px;
+        left: -5px;
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .NavbarMobile .langLink .langAbbrLink {
+        font-size: 20px;
+        padding: 0 10px 0px !important;
+    }
+}
