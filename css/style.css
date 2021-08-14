@@ -365,6 +365,9 @@ p, label{
       z-index: 1;
       text-align: right;
   }
+  .owl-stage-outer{
+      direction:revert;
+  }
 /***********************End Main************************************/
 
 
