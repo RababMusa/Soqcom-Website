@@ -12,13 +12,16 @@ body{
 p, label{
     margin-bottom: 0px;
 }
+@font-face {font-family: "Cocon Next Arabic";
+    src: url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.eot"); src: url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.woff") format("woff"), url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.svg#Cocon Next Arabic") format("svg"); 
+   }
 /***********************Start Main************************************/
 
 .secsearch{
-    font-family: 'Cairo', sans-serif;
+    font-family: "Cocon Next Arabic";
 }
 .divroundservices{
-    font-family:  Display, Sans-serif, Famous;
+    font-family: "Cocon Next Arabic";
 }
 
 .dropdown-toggle::after{
@@ -115,6 +118,7 @@ p, label{
 .vectorimgs{
     width: 100%;
     height: auto; 
+    margin-bottom: 25px;
 }
 .imgboximgrest{
     width: 100%;
@@ -126,7 +130,7 @@ p, label{
     max-width: 100px;
 }
 .boxcontentrest{
-    font-family: 'Cairo', sans-serif;
+    font-family:"Cocon Next Arabic";
 }
 .flexIconandImgrest{
     display: flex;
@@ -148,13 +152,13 @@ p, label{
     box-shadow: 3px 4px 5px #08C6F2;
     min-height: 200px;
     margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 .boxservices{
     box-shadow: 3px 4px 5px #eee;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: 'Cairo', sans-serif;
+    font-family: "Cocon Next Arabic";
     
 }
 .pTiltleboxrest{
@@ -215,7 +219,7 @@ p, label{
     border-radius: 6px;
     background-color: #08C6F2;
     padding:10px 20px;
-    font-family: 'Cairo', sans-serif;
+    font-family: "Cocon Next Arabic";
 }
 .imgboximgservices{
     box-shadow: 3px 4px 5px #eee;
@@ -368,7 +372,6 @@ p, label{
   .owl-stage-outer{
       direction:revert;
   }
-
-/***********************End Main************************************/
+  /***********************End Main************************************/
 
 
